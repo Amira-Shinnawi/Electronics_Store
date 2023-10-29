@@ -2,8 +2,8 @@ import 'package:electronics_store/features/Home/presentation/views/widgets/title
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
-import 'custom_text_felid.dart';
 import 'item_list_view.dart';
+import 'search_home_view.dart';
 import 'shape.dart';
 
 class HomeViewBody extends StatelessWidget {
@@ -20,7 +20,7 @@ class HomeViewBody extends StatelessWidget {
           SizedBox(
             height: 39,
           ),
-          CustomTextFelid(),
+          SearchHomeView(),
           SizedBox(
             height: 31,
           ),

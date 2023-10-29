@@ -1,4 +1,4 @@
-import 'package:electronics_store/constataints.dart';
+import 'package:electronics_store/constants.dart';
 import 'package:flutter/material.dart';
 
 import 'core/utils/app_router.dart';

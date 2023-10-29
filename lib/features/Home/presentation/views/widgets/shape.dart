@@ -1,9 +1,10 @@
-import 'package:electronics_store/constataints.dart';
+import 'package:electronics_store/constants.dart';
 import 'package:flutter/material.dart';
 
 class Shape extends StatelessWidget {
   const Shape({
-    super.key, required this.textShape,
+    super.key,
+    required this.textShape,
   });
   final String textShape;
   @override
@@ -22,10 +23,10 @@ class Shape extends StatelessWidget {
             ),
           ),
         ),
-        child:  Center(
+        child: Center(
           child: Text(
             textShape,
-            style:const TextStyle(
+            style: const TextStyle(
               color: Color(0xFFFFFBFB),
               fontSize: 20,
               fontFamily: kItim,

@@ -2,7 +2,7 @@ import 'package:electronics_store/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../constataints.dart';
+import '../../../../../constants.dart';
 import '../../../../../core/utils/assets_data.dart';
 
 class CustomItem extends StatelessWidget {
@@ -14,7 +14,7 @@ class CustomItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).push(AppRouter.kCard);
+        GoRouter.of(context).push(AppRouter.kCategoryView);
       },
       child: Stack(
         clipBehavior: Clip.none,

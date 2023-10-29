@@ -2,9 +2,9 @@ import 'package:electronics_store/features/Home/presentation/views/widgets/shape
 import 'package:electronics_store/features/Home/presentation/views/widgets/title_app.dart';
 import 'package:flutter/material.dart';
 
-import 'custom_text_felid.dart';
 import 'custom_app_bar.dart';
 import 'item_list_view.dart';
+import 'search_home_view.dart';
 
 class CategoryViewBody extends StatelessWidget {
   const CategoryViewBody({super.key});
@@ -20,7 +20,7 @@ class CategoryViewBody extends StatelessWidget {
           SizedBox(
             height: 39,
           ),
-          CustomTextFelid(),
+          SearchHomeView(),
           SizedBox(
             height: 31,
           ),

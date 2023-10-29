@@ -12,4 +12,3 @@ class MainHome extends StatelessWidget {
     );
   }
 }
-
