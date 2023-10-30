@@ -29,7 +29,7 @@ class OnBoardingContent extends StatelessWidget {
         Text(
           title,
           textAlign: TextAlign.center,
-          style: Styles.textStyle32.copyWith(
+          style: Styles.textStyle32KItim.copyWith(
             fontSize: 36,
             color: Colors.black,
           ),

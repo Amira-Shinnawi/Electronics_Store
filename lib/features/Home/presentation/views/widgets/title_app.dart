@@ -22,7 +22,7 @@ class TitleApp extends StatelessWidget {
         Text(
           'WIDE RANGE OF ELECTRONICS',
           textAlign: TextAlign.center,
-          style: Styles.textStyle24.copyWith(
+          style: Styles.textStyle32KItim.copyWith(
             fontSize: 20,
             fontWeight: FontWeight.w600,
           ),

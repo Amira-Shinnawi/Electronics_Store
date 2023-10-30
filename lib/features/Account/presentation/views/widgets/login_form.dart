@@ -10,7 +10,7 @@ import '../../../../../core/utils/assets_data.dart';
 import '../../../../../core/utils/style.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_felid.dart';
-import '../../../data/manager/user_controller.dart';
+import '../../../data/user_controller.dart';
 
 class LogInForm extends StatefulWidget {
   const LogInForm({super.key});
@@ -27,7 +27,7 @@ class _LogInFormState extends State<LogInForm> {
 
   TextEditingController emailController = TextEditingController();
 
-  UserController _userController = UserController();
+  final UserController _userController = UserController();
   bool isLoading = false;
   login() async {
     if (formState.currentState!.validate()) {
@@ -44,7 +44,13 @@ class _LogInFormState extends State<LogInForm> {
       } else {
         AwesomeDialog(
           context: context,
-          body: Text('${response['message']}'),
+          body: Text(
+            '${response['message']}',
+            style: Styles.textStyle24Inter.copyWith(
+              fontSize: 18,
+              color: kBlueColor,
+            ),
+          ),
         )..show();
       }
     }
@@ -99,7 +105,7 @@ class _LogInFormState extends State<LogInForm> {
                 ),
                 CustomButton(
                   buttonName: 'Log In',
-                  style: Styles.textStyle24.copyWith(
+                  style: Styles.textStyle24Inter.copyWith(
                     color: kPrimaryColor,
                     fontSize: 20,
                   ),
@@ -115,8 +121,9 @@ class _LogInFormState extends State<LogInForm> {
                 ),
                 Text(
                   'OR',
-                  style: Styles.textStyle32.copyWith(
+                  style: Styles.textStyle32KItim.copyWith(
                     fontSize: 36,
+                    color: kBlueColor,
                   ),
                 ),
                 const SizedBox(

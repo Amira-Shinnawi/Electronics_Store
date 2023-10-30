@@ -19,6 +19,7 @@ class ElectronicsStore extends StatelessWidget {
         fontFamily: kItim,
         scaffoldBackgroundColor: kPrimaryColor,
       ),
+      
     );
   }
 }

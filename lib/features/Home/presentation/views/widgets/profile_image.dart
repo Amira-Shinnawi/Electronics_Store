@@ -4,14 +4,14 @@ import '../../../../../core/utils/assets_data.dart';
 
 class ProfileImage extends StatelessWidget {
   const ProfileImage({
-    super.key,
+    super.key, required this.width, required this.height,
   });
-
+  final double width, height;
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 49,
-      height: 55,
+      width: width,
+      height: height,
       decoration: ShapeDecoration(
         image: const DecorationImage(
           image: AssetImage(AssetsData.profileImage),

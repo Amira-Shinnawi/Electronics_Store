@@ -78,7 +78,7 @@ class _OnBoardingViewBodyState extends State<OnBoardingViewBody> {
               padding: const EdgeInsets.only(bottom: 20, right: 8),
               child: CustomButton(
                 buttonName: 'Next',
-                style: Styles.textStyle24.copyWith(color: kPrimaryColor),
+                style: Styles.textStyle24Inter.copyWith(color: kPrimaryColor),
                 width: 130,
                 height: 50,
                 backgroundColor: kBlueColor,

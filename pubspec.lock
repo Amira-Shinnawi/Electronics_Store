@@ -65,14 +65,6 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "1.0.6"
-  dio:
-    dependency: "direct main"
-    description:
-      name: dio
-      sha256: "417e2a6f9d83ab396ec38ff4ea5da6c254da71e4db765ad737a42af6930140b7"
-      url: "https://pub.flutter-io.cn"
-    source: hosted
-    version: "5.3.3"
   equatable:
     dependency: "direct main"
     description:
@@ -120,6 +112,14 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
+  font_awesome_flutter:
+    dependency: "direct main"
+    description:
+      name: font_awesome_flutter
+      sha256: "52671aea66da73b58d42ec6d0912b727a42248dd9a7c76d6c20f275783c48c08"
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "10.6.0"
   go_router:
     dependency: "direct main"
     description:
@@ -176,6 +176,14 @@ packages:
       url: "https://pub.flutter-io.cn"
     source: hosted
     version: "2.1.1"
+  loading_overlay:
+    dependency: "direct main"
+    description:
+      name: loading_overlay
+      sha256: a4dd5a790e0d60568d4c684e46eed00de883db0dc660f90ffd583aca8f4a1d91
+      url: "https://pub.flutter-io.cn"
+    source: hosted
+    version: "0.3.0"
   logging:
     dependency: transitive
     description:

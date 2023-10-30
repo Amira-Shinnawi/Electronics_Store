@@ -5,7 +5,7 @@ import 'package:electronics_store/core/utils/app_router.dart';
 import 'package:electronics_store/core/utils/assets_data.dart';
 import 'package:electronics_store/core/utils/style.dart';
 import 'package:electronics_store/core/widgets/custom_button.dart';
-import 'package:electronics_store/features/Account/data/manager/user_controller.dart';
+import 'package:electronics_store/features/Account/data/user_controller.dart';
 import 'package:electronics_store/features/Account/presentation/views/widgets/password_text_felid.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -49,7 +49,13 @@ class _SignUpFormState extends State<SignUpForm> {
     } else {
       AwesomeDialog(
         context: context,
-        body: Text('${response['message']}'),
+        body: Text(
+          '${response['message']}',
+          style: Styles.textStyle24Inter.copyWith(
+            fontSize: 18,
+            color: kBlueColor,
+          ),
+        ),
       )..show();
     }
   }
@@ -130,7 +136,7 @@ class _SignUpFormState extends State<SignUpForm> {
                 ),
                 CustomButton(
                   buttonName: 'Sign UP',
-                  style: Styles.textStyle24.copyWith(
+                  style: Styles.textStyle24Inter.copyWith(
                     color: kPrimaryColor,
                     fontSize: 20,
                   ),
@@ -140,7 +146,6 @@ class _SignUpFormState extends State<SignUpForm> {
                   onPressed: () async {
                     if (formState.currentState!.validate()) {
                       await signUp();
-                      GoRouter.of(context).push(AppRouter.kMainView);
                     }
                   },
                 ),
@@ -149,8 +154,9 @@ class _SignUpFormState extends State<SignUpForm> {
                 ),
                 Text(
                   'OR',
-                  style: Styles.textStyle32.copyWith(
+                  style: Styles.textStyle32KItim.copyWith(
                     fontSize: 36,
+                    color: kBlueColor,
                   ),
                 ),
                 const SizedBox(

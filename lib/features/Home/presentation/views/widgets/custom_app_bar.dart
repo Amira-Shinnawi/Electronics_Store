@@ -13,7 +13,10 @@ class CustomAppBar extends StatelessWidget {
       children: [
         Logo(),
         Spacer(),
-        ProfileImage(),
+        ProfileImage(
+          width: 49,
+          height: 55,
+        ),
       ],
     );
   }

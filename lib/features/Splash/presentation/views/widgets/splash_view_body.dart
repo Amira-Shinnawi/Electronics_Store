@@ -56,12 +56,14 @@ class _SplashViewBodyState extends State<SplashViewBody>
               child: CustomButton(
                 buttonName: 'Log In',
                 onPressed: () {
-                  GoRouter.of(context).push(AppRouter.kAccountView);
+                  GoRouter.of(context).push(AppRouter.kMainView);
                 },
                 width: 148,
                 height: 74,
                 backgroundColor: kButtonColor,
-                style: Styles.textStyle32,
+                style: Styles.textStyle32KItim.copyWith(
+                  color: kBlueColor,
+                ),
                 borderRadius: BorderRadius.circular(90),
               ),
             ),
@@ -76,7 +78,9 @@ class _SplashViewBodyState extends State<SplashViewBody>
                 width: 148,
                 height: 74,
                 backgroundColor: kButtonColor,
-                style: Styles.textStyle32,
+                style:Styles.textStyle32KItim.copyWith(
+                  color: kBlueColor,
+                ),
               ),
             ),
             Positioned(

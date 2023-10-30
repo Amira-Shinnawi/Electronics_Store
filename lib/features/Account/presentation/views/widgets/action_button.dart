@@ -39,7 +39,7 @@ class _ActionButtonState extends State<ActionButton> {
                   buttonName: 'Sign Up',
                   width: 113,
                   height: 40,
-                  style: Styles.textStyle24.copyWith(
+                  style: Styles.textStyle24Inter.copyWith(
                     color: isSignUpSelected ? kPrimaryColor : kBlueColor,
                     fontSize: 20,
                     fontFamily: kInter,
@@ -60,7 +60,7 @@ class _ActionButtonState extends State<ActionButton> {
                   buttonName: 'Log In',
                   width: 113,
                   height: 40,
-                  style: Styles.textStyle24.copyWith(
+                  style: Styles.textStyle24Inter.copyWith(
                     color: isSignUpSelected ? kBlueColor : kPrimaryColor,
                     fontSize: 20,
                     fontFamily: kInter,

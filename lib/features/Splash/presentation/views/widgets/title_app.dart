@@ -12,23 +12,27 @@ class CustomTilteApp extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Text(
+         Text(
           'Top',
-          style: Styles.textStyle24,
+          style: Styles.textStyle32KItim.copyWith(
+            fontSize: 24,
+          ),
         ),
         Text(
           'Brands',
-          style: Styles.textStyle24.copyWith(
+          style: Styles.textStyle32KItim.copyWith(
             fontSize: 40,
           ),
         ),
-        const Text(
+         Text(
           'Lowest',
-          style: Styles.textStyle24,
+          style: Styles.textStyle32KItim.copyWith(
+            fontSize: 24,
+          ),
         ),
         Text(
           'Price',
-          style: Styles.textStyle24.copyWith(
+          style: Styles.textStyle32KItim.copyWith(
             fontSize: 40,
           ),
         ),

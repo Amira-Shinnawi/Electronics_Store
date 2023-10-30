@@ -38,7 +38,7 @@ class SearchHomeView extends StatelessWidget {
                   ),
                   child: CustomButton(
                       buttonName: 'Search',
-                      style: Styles.textStyle32.copyWith(
+                      style: Styles.textStyle32KItim.copyWith(
                         color: kBlueColor,
                         fontSize: 17,
                       ),

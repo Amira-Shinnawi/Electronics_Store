@@ -6,15 +6,17 @@ class CustomTextFelid extends StatelessWidget {
   const CustomTextFelid({
     super.key,
     this.suffixIcon,
-    required this.hinText, this.controller, this.validator,
+    required this.hinText, this.controller, this.validator, this.onChanged,
   });
   final Widget? suffixIcon;
   final String hinText;
 final  TextEditingController? controller;
 final String? Function(String?)? validator;
+final void Function(String)? onChanged;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      onChanged:onChanged ,
       controller:controller ,
       validator:validator ,
       decoration: InputDecoration(

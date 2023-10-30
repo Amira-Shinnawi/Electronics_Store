@@ -7,16 +7,18 @@ class PasswordTextFelid extends StatelessWidget {
   final Widget? suffixIcon;
   final TextEditingController? controller;
   final String? Function(String?)? validator;
+  final void Function(String)? onChanged;
   const PasswordTextFelid({
     Key? key,
     this.obscureText = false,
-    this.suffixIcon, this.controller, this.validator,
+    this.suffixIcon, this.controller, this.validator, this.onChanged,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       controller:controller ,
+      onChanged: onChanged,
       validator:validator ,
       obscureText: obscureText,
       decoration: InputDecoration(

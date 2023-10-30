@@ -1,9 +1,9 @@
+import 'package:electronics_store/features/Home/presentation/views/widgets/category_item_list_view.dart';
 import 'package:electronics_store/features/Home/presentation/views/widgets/shape.dart';
 import 'package:electronics_store/features/Home/presentation/views/widgets/title_app.dart';
 import 'package:flutter/material.dart';
 
 import 'custom_app_bar.dart';
-import 'item_list_view.dart';
 import 'search_home_view.dart';
 
 class CategoryViewBody extends StatelessWidget {
@@ -30,7 +30,7 @@ class CategoryViewBody extends StatelessWidget {
           SizedBox(
             height: 25,
           ),
-          ItemListView(),
+          CategoryItemListView(),
         ],
       ),
     );
