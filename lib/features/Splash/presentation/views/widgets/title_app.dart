@@ -12,7 +12,7 @@ class CustomTilteApp extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-         Text(
+        Text(
           'Top',
           style: Styles.textStyle32KItim.copyWith(
             fontSize: 24,
@@ -24,7 +24,7 @@ class CustomTilteApp extends StatelessWidget {
             fontSize: 40,
           ),
         ),
-         Text(
+        Text(
           'Lowest',
           style: Styles.textStyle32KItim.copyWith(
             fontSize: 24,

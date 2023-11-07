@@ -1,5 +1,7 @@
+import 'package:electronics_store/core/utils/app_router.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../constants.dart';
 import '../../../../../core/utils/style.dart';
@@ -63,42 +65,52 @@ class PaymentDetails extends StatelessWidget {
           ),
           Row(
             children: [
-              Container(
-                width: 83,
-                height: 42,
-                decoration: ShapeDecoration(
-                  color: kPrimaryColor,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
-                    side: const BorderSide(width: 1, color: kBlueColor),
+              GestureDetector(
+                onTap: () {
+                  Navigator.pop(context);
+                },
+                child: Container(
+                  width: 83,
+                  height: 42,
+                  decoration: ShapeDecoration(
+                    color: kPrimaryColor,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                      side: const BorderSide(width: 1, color: kBlueColor),
+                    ),
                   ),
-                ),
-                child: Center(
-                  child: Text(
-                    'Back',
-                    style: Styles.textStyle24Inter.copyWith(
-                      fontSize: 15,
-                      color: kButtonColor,
+                  child: Center(
+                    child: Text(
+                      'Back',
+                      style: Styles.textStyle24Inter.copyWith(
+                        fontSize: 15,
+                        color: kButtonColor,
+                      ),
                     ),
                   ),
                 ),
               ),
               const Spacer(),
-              Container(
-                width: 220,
-                height: 42,
-                decoration: ShapeDecoration(
-                  color: kBlueColor,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+              GestureDetector(
+                onTap: () {
+                  GoRouter.of(context).push(AppRouter.kEditProfile);
+                },
+                child: Container(
+                  width: 220,
+                  height: 42,
+                  decoration: ShapeDecoration(
+                    color: kBlueColor,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
                   ),
-                ),
-                child: Center(
-                  child: Text(
-                    'Confirm Payment :EGP 8,587',
-                    style: Styles.textStyle24Inter.copyWith(
-                      fontSize: 15,
-                      color: kButtonColor,
+                  child: Center(
+                    child: Text(
+                      'Confirm Payment :EGP 8,587',
+                      style: Styles.textStyle24Inter.copyWith(
+                        fontSize: 15,
+                        color: kButtonColor,
+                      ),
                     ),
                   ),
                 ),

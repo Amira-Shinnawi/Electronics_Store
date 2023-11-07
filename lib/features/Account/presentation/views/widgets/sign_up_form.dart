@@ -51,7 +51,7 @@ class _SignUpFormState extends State<SignUpForm> {
         context: context,
         body: Text(
           '${response['message']}',
-          style: Styles.textStyle24Inter.copyWith(
+          style: Styles.textStyle32KItim.copyWith(
             fontSize: 18,
             color: kBlueColor,
           ),
@@ -146,6 +146,9 @@ class _SignUpFormState extends State<SignUpForm> {
                   onPressed: () async {
                     if (formState.currentState!.validate()) {
                       await signUp();
+                      GoRouter.of(context).push(
+                        AppRouter.kEditProfile,
+                      );
                     }
                   },
                 ),

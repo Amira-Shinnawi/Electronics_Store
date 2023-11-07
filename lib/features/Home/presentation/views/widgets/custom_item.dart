@@ -42,22 +42,13 @@ class CustomItem extends StatelessWidget {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      '15000LE ',
-                      style: TextStyle(
-                        fontSize: 13,
-                        fontFamily: kItim,
-                        fontWeight: FontWeight.bold,
-                      ),
-                    ),
-                    Icon(
-                      Icons.shopping_cart_outlined,
-                      size: 16,
-                    )
-                  ],
+                const Text(
+                  '15000 LE ',
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontFamily: kItim,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ],
             ),

@@ -1,6 +1,7 @@
 import 'package:electronics_store/features/Account/presentation/views/account_view.dart';
 import 'package:electronics_store/features/Account/presentation/views/edit_profile_view.dart';
 import 'package:electronics_store/features/Card/presentation/views/card_view.dart';
+import 'package:electronics_store/features/Card/presentation/views/search_category_view.dart';
 import 'package:electronics_store/features/Home/presentation/views/main_view.dart';
 import 'package:electronics_store/features/Splash/presentation/views/on_boarding_view.dart';
 import 'package:electronics_store/features/Splash/presentation/views/splash_view.dart';
@@ -15,6 +16,7 @@ abstract class AppRouter {
   static const kOnBoarding = '/onBoarding';
   static const kAccountView = '/AccountView';
   static const kEditProfile = '/EditProfile';
+  static const kSearchCategory = '/SearchCategory';
 
   static final router = GoRouter(
     routes: [
@@ -45,6 +47,10 @@ abstract class AppRouter {
       GoRoute(
         path: kEditProfile,
         builder: (context, state) => const EditProfile(),
+      ),
+      GoRoute(
+        path: kSearchCategory,
+        builder: (context, state) => const SearchCategoryView(),
       ),
     ],
   );

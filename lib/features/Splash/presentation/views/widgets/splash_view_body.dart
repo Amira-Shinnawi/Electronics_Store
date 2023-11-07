@@ -46,7 +46,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
               child: Image.asset(AssetsData.elecShope),
             ),
             const Positioned(
-              left: 30,
+              left: 40,
               top: 257,
               child: CustomTilteApp(),
             ),
@@ -56,7 +56,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
               child: CustomButton(
                 buttonName: 'Log In',
                 onPressed: () {
-                  GoRouter.of(context).push(AppRouter.kMainView);
+                  GoRouter.of(context).push(AppRouter.kEditProfile);
                 },
                 width: 148,
                 height: 74,
@@ -78,7 +78,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
                 width: 148,
                 height: 74,
                 backgroundColor: kButtonColor,
-                style:Styles.textStyle32KItim.copyWith(
+                style: Styles.textStyle32KItim.copyWith(
                   color: kBlueColor,
                 ),
               ),

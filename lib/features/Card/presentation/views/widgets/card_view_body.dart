@@ -25,9 +25,6 @@ class _CardViewBodyState extends State<CardViewBody> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              const SizedBox(
-                height: 21,
-              ),
               const CustomAppBar(),
               Center(
                 child: Text(

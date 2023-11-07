@@ -46,7 +46,7 @@ class _LogInFormState extends State<LogInForm> {
           context: context,
           body: Text(
             '${response['message']}',
-            style: Styles.textStyle24Inter.copyWith(
+            style: Styles.textStyle32KItim.copyWith(
               fontSize: 18,
               color: kBlueColor,
             ),

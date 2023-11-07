@@ -1,7 +1,7 @@
 import 'package:electronics_store/constants.dart';
 import 'package:electronics_store/features/Account/presentation/views/edit_profile_view.dart';
+import 'package:electronics_store/features/Card/presentation/views/search_category_view.dart';
 import 'package:electronics_store/features/Home/presentation/views/card_view.dart';
-import 'package:electronics_store/features/Home/presentation/views/category_view.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
@@ -19,7 +19,7 @@ class _MainHomeState extends State<MainHome> {
 
   List<Widget> screens = const [
     HomeView(),
-    CategoryView(),
+    SearchCategoryView(),
     CardView(),
     EditProfile()
   ];
@@ -51,10 +51,10 @@ class _MainHomeState extends State<MainHome> {
                 backgroundColor: Color(0xFFE7E7E7),
               ),
               BottomNavigationBarItem(
-                label: 'Menu',
+                label: 'Search',
                 icon: Icon(
-                  Icons.menu_rounded,
-                  size: 30,
+                  FontAwesomeIcons.magnifyingGlass,
+                  size: 25,
                 ),
                 backgroundColor: Color(0xFFE7E7E7),
               ),
@@ -69,7 +69,7 @@ class _MainHomeState extends State<MainHome> {
               BottomNavigationBarItem(
                 label: 'Profile',
                 icon: Icon(
-                  Icons.person,
+                  FontAwesomeIcons.user,
                   size: 30,
                 ),
                 backgroundColor: Color(0xFFE7E7E7),

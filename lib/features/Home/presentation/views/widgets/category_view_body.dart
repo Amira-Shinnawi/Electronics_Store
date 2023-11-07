@@ -1,38 +1,49 @@
-import 'package:electronics_store/features/Home/presentation/views/widgets/category_item_list_view.dart';
-import 'package:electronics_store/features/Home/presentation/views/widgets/shape.dart';
-import 'package:electronics_store/features/Home/presentation/views/widgets/title_app.dart';
+import 'package:electronics_store/constants.dart';
+import 'package:electronics_store/core/utils/app_router.dart';
+import 'package:electronics_store/core/utils/style.dart';
+import 'package:electronics_store/core/widgets/custom_button.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
-import 'custom_app_bar.dart';
-import 'search_home_view.dart';
+import 'category_item_section.dart';
+import 'item_details.dart';
 
 class CategoryViewBody extends StatelessWidget {
   const CategoryViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          CustomAppBar(),
-          TitleApp(),
-          SizedBox(
-            height: 39,
+    return CustomScrollView(
+      slivers: [
+        SliverFillRemaining(
+          child: Column(
+            children: [
+              const SizedBox(
+                height: 40,
+              ),
+              const ItemDetails(),
+              CustomButton(
+                buttonName: 'ADD TO CART',
+                onPressed: () {
+                  GoRouter.of(context).push(AppRouter.kCard);
+                },
+                style: Styles.textStyle32KItim.copyWith(
+                  fontSize: 20,
+                  color: kBlueColor,
+                  fontWeight: FontWeight.bold,
+                ),
+                width: 215,
+                height: 42,
+                backgroundColor: kButtonColor,
+              ),
+              const SizedBox(
+                height: 80,
+              ),
+              const CategoryItemSection(),
+            ],
           ),
-          SearchHomeView(),
-          SizedBox(
-            height: 31,
-          ),
-          Shape(
-            textShape: 'Our Categories',
-          ),
-          SizedBox(
-            height: 25,
-          ),
-          CategoryItemListView(),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

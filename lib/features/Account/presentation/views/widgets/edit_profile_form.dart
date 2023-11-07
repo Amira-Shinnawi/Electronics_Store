@@ -5,9 +5,11 @@ import '../../../../../core/utils/style.dart';
 class EditProfileForm extends StatelessWidget {
   const EditProfileForm({
     super.key,
-    required this.hintName,
+    required this.hintName,required this.controller,
   });
   final String hintName;
+  final  TextEditingController? controller;
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -23,21 +25,22 @@ class EditProfileForm extends StatelessWidget {
               ),
             ),
           ),
-          const Expanded(
+           Expanded(
             child: SizedBox(
               height: 40,
-              child: TextField(
-                decoration: InputDecoration(
+              child: TextFormField(
+                controller:controller ,
+                decoration:const InputDecoration(
                   contentPadding: EdgeInsets.all(5),
                   hintText: '',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
-                      Radius.circular(0),
+                      Radius.circular(10),
                     ),
                   ),
                   enabledBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.all(
-                      Radius.circular(0),
+                      Radius.circular(10),
                     ),
                   ),
                   filled: true,

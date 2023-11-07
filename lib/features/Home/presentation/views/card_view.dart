@@ -9,9 +9,11 @@ class CardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-        body: Padding(
-      padding: kPadding,
-      child: CardViewBody(),
-    ));
+        body: SafeArea(
+          child: Padding(
+              padding: kPadding,
+              child: CardViewBody(),
+            ),
+        ));
   }
 }
