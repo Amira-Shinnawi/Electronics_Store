@@ -146,9 +146,6 @@ class _SignUpFormState extends State<SignUpForm> {
                   onPressed: () async {
                     if (formState.currentState!.validate()) {
                       await signUp();
-                      GoRouter.of(context).push(
-                        AppRouter.kEditProfile,
-                      );
                     }
                   },
                 ),

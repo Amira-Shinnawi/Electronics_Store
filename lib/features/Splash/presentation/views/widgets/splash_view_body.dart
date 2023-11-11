@@ -56,7 +56,7 @@ class _SplashViewBodyState extends State<SplashViewBody>
               child: CustomButton(
                 buttonName: 'Log In',
                 onPressed: () {
-                  GoRouter.of(context).push(AppRouter.kEditProfile);
+                  GoRouter.of(context).push(AppRouter.kMainView);
                 },
                 width: 148,
                 height: 74,
