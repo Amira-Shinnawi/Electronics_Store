@@ -1,4 +1,5 @@
 import 'package:electronics_store/core/utils/app_router.dart';
+import 'package:electronics_store/features/Home/data/models/Product.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -8,7 +9,9 @@ import '../../../../../core/utils/assets_data.dart';
 class CustomItem extends StatelessWidget {
   const CustomItem({
     super.key,
+    required this.productModel,
   });
+  final ProductModel productModel;
 
   @override
   Widget build(BuildContext context) {
@@ -22,34 +25,39 @@ class CustomItem extends StatelessWidget {
         children: [
           Container(
             width: 117,
-            height: 108,
+            height: 118,
             decoration: BoxDecoration(
               color: kButtonColor,
               borderRadius: BorderRadius.circular(30),
             ),
             child: Column(
               children: [
-                Image.asset(
-                  AssetsData.laptop,
+                const Spacer(),
+                Image.network(
+                  'http://10.0.2.2/elecshop/uploads/categoryPicture/${productModel.productImage}',
                   width: 89,
                   height: 69,
                 ),
-                const Text(
-                  'Dell Latitude',
-                  style: TextStyle(
+                const Spacer(),
+                Text(
+                  productModel.productName,
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
                     fontSize: 14,
                     fontFamily: kItim,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                const Text(
-                  '15000 LE ',
-                  style: TextStyle(
+                Text(
+                  productModel.productPrice,
+                  style: const TextStyle(
                     fontSize: 13,
                     fontFamily: kItim,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
+                const Spacer(),
               ],
             ),
           ),

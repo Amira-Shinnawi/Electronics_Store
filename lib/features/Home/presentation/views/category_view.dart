@@ -58,7 +58,7 @@ class CategoryView extends StatelessWidget {
         ],
         elevation: 0.0,
       ),
-      body:const CategoryViewBody(),
+      body: const CategoryViewBody(),
     );
   }
 }

@@ -21,8 +21,8 @@ class CardListViewItem extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                child:const Padding(
-                  padding:  EdgeInsets.all(8.0),
+                child: const Padding(
+                  padding: EdgeInsets.all(8.0),
                   child: CardItem(),
                 ),
               ),

@@ -5,10 +5,11 @@ import '../../../../../core/utils/style.dart';
 class EditProfileForm extends StatelessWidget {
   const EditProfileForm({
     super.key,
-    required this.hintName,required this.controller,
+    required this.hintName,
+    required this.controller,
   });
   final String hintName;
-  final  TextEditingController? controller;
+  final TextEditingController? controller;
 
   @override
   Widget build(BuildContext context) {
@@ -25,12 +26,12 @@ class EditProfileForm extends StatelessWidget {
               ),
             ),
           ),
-           Expanded(
+          Expanded(
             child: SizedBox(
               height: 40,
               child: TextFormField(
-                controller:controller ,
-                decoration:const InputDecoration(
+                controller: controller,
+                decoration: const InputDecoration(
                   contentPadding: EdgeInsets.all(5),
                   hintText: '',
                   border: OutlineInputBorder(

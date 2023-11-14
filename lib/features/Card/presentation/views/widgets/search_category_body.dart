@@ -29,7 +29,6 @@ class SearchCategoryBody extends StatelessWidget {
                 'Search Results',
                 style: Styles.textStyle32KItim.copyWith(
                   color: kBlueColor,
-                  
                 ),
               ),
               const SizedBox(

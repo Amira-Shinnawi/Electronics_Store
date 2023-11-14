@@ -6,13 +6,15 @@ import '../../../../../core/utils/assets_data.dart';
 
 class ProfileImage extends StatelessWidget {
   const ProfileImage({
-    super.key, required this.width, required this.height,
+    super.key,
+    required this.width,
+    required this.height,
   });
   final double width, height;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: (){
+      onTap: () {
         GoRouter.of(context).push(AppRouter.kEditProfile);
       },
       child: Container(

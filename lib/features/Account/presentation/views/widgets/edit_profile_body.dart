@@ -147,7 +147,6 @@ class _EditProfileBodyState extends State<EditProfileBody> {
                       context: context,
                       animType: AnimType.scale,
                       dialogType: DialogType.success,
-                      
                       body: const Center(
                         child: Text(
                           'Updated Account Successfully',

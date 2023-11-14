@@ -11,15 +11,18 @@ class PasswordTextFelid extends StatelessWidget {
   const PasswordTextFelid({
     Key? key,
     this.obscureText = false,
-    this.suffixIcon, this.controller, this.validator, this.onChanged,
+    this.suffixIcon,
+    this.controller,
+    this.validator,
+    this.onChanged,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
-      controller:controller ,
+      controller: controller,
       onChanged: onChanged,
-      validator:validator ,
+      validator: validator,
       obscureText: obscureText,
       decoration: InputDecoration(
         hintText: 'Enter Password',

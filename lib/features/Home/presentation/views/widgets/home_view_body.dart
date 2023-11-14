@@ -11,26 +11,26 @@ class HomeViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
+    return  SafeArea(
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          CustomAppBar(),
-          TitleApp(),
-          SizedBox(
+          const CustomAppBar(),
+          const TitleApp(),
+          const SizedBox(
             height: 39,
           ),
           SearchHomeView(),
-          SizedBox(
+          const SizedBox(
             height: 31,
           ),
-          Shape(
+          const Shape(
             textShape: 'New Arrival',
           ),
-          SizedBox(
+          const SizedBox(
             height: 25,
           ),
-          ItemListView(),
+          const ItemListView(),
         ],
       ),
     );
